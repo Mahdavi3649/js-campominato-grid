@@ -12,7 +12,6 @@
     go.addEventListener("click", function(){
         let selezione = document.getElementById("myselect").value;
         let grid = document.getElementById("grid");
-        grid.innerHTML = "";
     })
 
     if(selezione == "easy"){ 
@@ -30,4 +29,7 @@
             grid.innerHTML += `<div class="qua num item-${j}">${j}</div>`;
         }
     } 
+
+        
+
 

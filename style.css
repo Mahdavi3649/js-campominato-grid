@@ -21,7 +21,7 @@ main{
 
  .quadrato{
     width: calc(100% / 10);
-    border: 2px solid rgb(214, 138, 208);
+    border: 2px solid rgb(214, 128, 208);
     background-color: rgb(218, 50, 176);
 }
 .quadr{
@@ -41,9 +41,4 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.change{
-    background-color: rgb(107, 183, 206);
-    color: blue;
-    cursor:pointer;
 }
