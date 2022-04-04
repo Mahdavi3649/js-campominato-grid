@@ -1,7 +1,4 @@
-:root{
-    background: #6495ED;
-    background: #7FFFD4;
-}
+
 
 header{
     background-color: white;
@@ -13,28 +10,29 @@ main{
 
 
 #grid{
-    width: 700px;
-    height: 700px;
+    max-width: 700px;
+    min-height: 700px;
     display: flex;
+    margin: 4rem 0;
     flex-wrap: wrap;
+    margin: 0 auto;
  }
 
  .quadrato{
     width: calc(100% / 10);
-    border: 2px solid rgb(214, 128, 208);
-    background-color: rgb(218, 50, 176);
+    border: 1px solid black;
+    color: black;
 }
 .quadr{
     width: calc(100% / 9);
-    border: 2px solid rgb(54, 54, 131);
-    background-color: rgb(28, 28, 68);
-    color: white;
+    border: 1px solid black;
+    color: black;
 }
 
 .qua{
     width: calc(100% / 7);
-    border: 3px solid rgb(17, 14, 59);
-    background-color: lightcoral;
+    border: 1px solid black;
+    color: black;
 }
 
 .num{

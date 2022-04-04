@@ -12,23 +12,25 @@
     go.addEventListener("click", function(){
         let selezione = document.getElementById("myselect").value;
         let grid = document.getElementById("grid");
+        grid.innerHTML = "";
+        
+        if(selezione == "easy"){ 
+            for(let i=1; i<=100 ; i++){
+                grid.innerHTML += `<div class="quadrato num item-${i}">${i}</div>`;
+            }
+            
+        }else if(selezione=="medium"){
+            for(let index=1; index<=81 ; index++){
+                grid.innerHTML += `<div class="quadr num item-${index}">${index}</div>`;
+            }
+            
+        }else if(selezione=="hard"){
+            for(let j=1; j<=49 ; j++){
+                grid.innerHTML += `<div class="qua num item-${j}">${j}</div>`;
+            }
+        } 
     })
 
-    if(selezione == "easy"){ 
-        for(let i=1; i<=100 ; i++){
-            grid.innerHTML += `<div class="quadrato num item-${i}">${i}</div>`;
-        }
-        
-    }else if(selezione=="medium"){
-        for(let index=1; index<=81 ; index++){
-            grid.innerHTML += `<div class="quadr num item-${index}">${index}</div>`;
-        }
-        
-    }else if(selezione=="hard"){
-        for(let j=1; j<=49 ; j++){
-            grid.innerHTML += `<div class="qua num item-${j}">${j}</div>`;
-        }
-    } 
 
         
 
